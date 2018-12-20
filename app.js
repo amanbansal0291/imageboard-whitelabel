@@ -23,7 +23,7 @@ var app = express();
 app.use(expressLayouts);
 
 
-var mongodbUri = 'mongodb://amanb:devilonA1@ds139534.mlab.com:39534/tripbaba';
+var mongodbUri = 'mongodb://amanb:devilonA1@ds135974.mlab.com:35974/heroku_bdkcdx9h';
 
 mongoose.connect(mongodbUri, { useNewUrlParser: true });
 
