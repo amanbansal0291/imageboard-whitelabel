@@ -7,7 +7,7 @@ yarn-error.log*
 
 #user files
 
-localprocessconstants.js
+*/localVars.js
 
 # Runtime data
 pids

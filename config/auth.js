@@ -1,5 +1,15 @@
 // config/auth.js
 
+var localenv;
+try{
+localenv=require('./localVars');
+}catch(e){
+      console.log(e.message);
+}
+
+if(!process){
+var process=localenv.process;
+}
 // expose our config directly to our application using module.exports
 module.exports = {
 

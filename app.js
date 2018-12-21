@@ -1,5 +1,15 @@
 global.appName="9GAG"
 
+var localenv;
+try{
+localenv=require('./config/localVars');
+}catch(e){
+      console.log(e.message);
+}
+
+if(!process){
+var process=localenv.process;
+}
 
 var createError = require('http-errors');
 var express = require('express');
@@ -21,6 +31,8 @@ require('./config/passport')(passport);
 
 var app = express();
 app.use(expressLayouts);
+
+
 
 
 var mongodbUri = process.env.MONGODB_URI;
